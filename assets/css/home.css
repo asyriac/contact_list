@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: gray;
+  border: 1px solid black;
+  color: white;
+  padding: 5px;
+}
+
+table {
+  width: 50%;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+#row {
+  outline: thin solid;
+  padding: 5px;
+}
+
+#row:hover {
+  background-color: blue;
+  color: white;
+}
+
+td {
+  padding: 5px;
+}
+input {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

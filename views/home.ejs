@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/96e47abe86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/home.css" />
+    <title><%=title%></title>
+  </head>
+  <body>
+    <h1><i class="fas fa-id-card-alt"></i> My contact list</h1>
+    <form action="/create" method="POST">
+      <input type="text" name="name" placeholder="Name" />
+      <input type="number" name="phone" placeholder="Phone" />
+      <button type="submit">Add Contacts</button>
+    </form>
+    <table>
+      <%for(let i of contact_list){%>
+      <tr id="row">
+        <td><%=i.name%></td>
+        <td style=""><%=i.phone%></td>
+        <td style="text-align: right;">
+          <a href="/delete-contact/<%=i.phone%>"><i class="fas fa-trash"></i></a>
+        </td>
+      </tr>
+      <%}%>
+    </table>
+
+    <script src="/js/home.js"></script>
+  </body>
+</html>

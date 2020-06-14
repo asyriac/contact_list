@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=title%></title>
+  </head>
+  <body>
+    <h1>Playground</h1>
+
+    <!-- Variable -->
+    <h2>
+      <%=heading%>
+    </h2>
+
+    <!-- Loop -->
+    <ul>
+      <% for(let i = 1 ; i <=5 ; i++){ %>
+      <li>
+        <%= i%>
+      </li>
+      <%}%>
+    </ul>
+
+    <!-- Conditional statement -->
+    <% if (true) { %>
+    <h1>True</h1>
+    <% } else{%>
+    <h1>False</h1>
+    <% } %>
+
+    <ul>
+      <%for(let i of contact_list){%>
+      <li>
+        <p><%=i.name%></p>
+        <p><%=i.phone%></p>
+      </li>
+      <%}%>
+    </ul>
+  </body>
+</html>
